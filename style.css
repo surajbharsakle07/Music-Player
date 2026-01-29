@@ -1,5 +1,5 @@
 body {
-    background: url('') no-repeat center center fixed;
+    background: url('/music/bg-image.jpg') no-repeat center center fixed;
     background-color: #e0e5ec;
     display: flex;
     justify-content: center;

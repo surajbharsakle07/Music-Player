@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="player-container">
+        <div class="song-info">
+            <h2 id="title">Song Title</h2>
+            <h3 id="artist">Artist Name</h3>
+        </div>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev" title="Previous"><i class="fas fa-backward"></i></button>
+            <button id="play" class="main-button" title="Play"><i class="fas fa-play" id="play-icon"></i></button>
+            <button id="next" title="Next"><i class="fas fa-forward"></i></button>
+        </div>
+
+        <div class="volume-container">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+     <audio id="main-audio" src="music/SAAHO BGM.mp3"></audio>
+     <audio id="main-audio" src="music/Marco_Tony_bgm.mp3"></audio>
+     <audio id="main-audio" src="music/Rolex Entry bgm.mp3"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>

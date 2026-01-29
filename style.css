@@ -1,0 +1,73 @@
+body {
+    background: url('') no-repeat center center fixed;
+    background-color: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.player-container {
+    background: #fff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.song-info h2 { margin-bottom: 5px; }
+.song-info h3 { color: #777; font-weight: 300; margin-top: 0; }
+
+/* Progress Bar */
+.progress-container {
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    height: 6px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #24292e;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%; /* Will be updated by JS */
+    transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.main-button { font-size: 40px; }
+
+.volume-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
